@@ -27,10 +27,51 @@ body {
 }
 
 .landing-header {
-    padding-top: 30vh;
+    padding-top: calc(37vh - 7vw);
     text-align: center;
     font-size: calc(3vh + 12vw);
     color: white;
     text-shadow: 4px 4px 7px #333;
     font-family: 'Montserrat', sans-serif;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    margin-left: -0.5em;
+    margin-bottom: -0.5em;
+    justify-content: center;
+
+    > * {
+        margin-left: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  padding: 0.5em;
+  margin: 0.5em 0.5em;
+  text-decoration: none;
+  font-size: calc(1vh + 4vw);
+  color: #fff;
+  border: #fff;
+  border-style: solid;
+  border-width: 0.1em;
+  background: rgba(0,0,0,0.45);
+  transition: 0.25s ease all;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.btn:hover {
+  background: rgba(0,0,0,0.9);
+  text-shadow: 0 0 2px rgba(255,255,255,0.5), 0 0 3px rgba(255,255,255,0.5);
+}
+
+@media (min-width: 30rem) {
+    .btns {
+        flex-direction: row;
+        margin: 0 0.5em;
+    }
 }
