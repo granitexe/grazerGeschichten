@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+	box-sizing: border-box;
+
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #111;
+}
+body, html {
+	overflow-X: hidden;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Explain Section */
+.explain {
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  justify-content: center;
+  background-color: #111;
+	display: flex;
+	flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.explain-left {
+    padding: 80px 0;
+  min-height: 40vh;
+  width: 100%;
+  justify-content: center;
+  background-color: #111;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explain .explain-image,
+.explain-left .explain-image-left{
+  height: auto;
+  width: 100%;
+	margin-bottom: 3rem;
+}
+
+.explain .explain-image img,
+.explain-left .explain-image-left img {
+  height: 100%;
+	width: 100%;
+	border-radius: none;
+}
+
+.explain .explain-info,
+.explain-left .explain-info-left {
+  width: 80%;
+  text-align: center;
+}
+
+.explain .explain-info .explain-info-heading,
+.explain-left .explain-info-left .explain-info-heading-left {
+  font-size: 5rem;
+  font-weight: 300;
+	color: lightgrey;
+	transition: 1s ease all;
+}
+
+.explain:hover .explain-info .explain-info-heading,
+.explain:hover-left .explain-info-left .explain-info-heading-left {
+	text-shadow: 0 0 4px white;
+	transition: 0.7s ease all;
+}
+
+.explain .explain-info .explain-info-text,
+.explain-left .explain-info-left .explain-info-text-left {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  color: lightgrey;
+}
+
+.explain-info-heading-small {
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        color: lightgrey;
+    }
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-box img {
+    width: 80px;
+    align-self: center;
+}
+/* END Explain Section */
+
+/* Media query for desktop and tab */
+@media only screen and (min-width:768px) {
+
+  .explain .explain-image,
+  .explain-left .explain-image-left {
+		width: 80%;
+	}
+
+	.explain .explain-image img,
+  .explain-left .explain-image-left img {
+		border-radius: 15px;
+	}
+
+    .title-box {
+        flex-direction: row;
+        padding: 0.5em;
+    }
+    .title-box img {
+        margin-right: 10px;
+    }
+}
+/* END Media query for desktop and tab */
+
+/* Media Query for Desktop ONLY */
+@media only screen and (min-width:1200px) {
+	.explain,
+  .explain-left {
+		flex-direction: row;
+	}
+
+	.explain .explain-info {
+		text-align: left;
+	}
+
+  .explain-left .explain-info-left {
+		margin-left: 35%;
+		text-align: left;
+  }
+
+	.explain .explain-info ul,
+  .explain-left .explain-info-left ul{
+		text-align: left;
+	}
+
+    .explain .explain-info .explain-info-heading,
+    .explain-left .explain-info-left .explain-info-heading-left {
+    font-size: 6rem;
+	}
+
+	.explain .explain-image {
+		margin-right: 2%;
+	}
+
+  .explain-left .explain-image-left {
+    margin-left: 2%;
+  }
+
+	.explain .explain-image img,
+  .explain-left .explain-image-left img {
+		border-radius: 15px;
+	}
+}
+/* END Media Query for Desktop ONLY */

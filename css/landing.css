@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    height: 94.5vh;
+ }
+
+
+#landing {
+    height: 98%;
+    width: 100%;
+    background: url("../resources/landing.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.landing-header {
+    padding-top: calc(37vh - 7vw);
+    text-align: center;
+    font-size: calc(3vh + 12vw);
+    color: white;
+    text-shadow: 4px 4px 7px #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btns {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: 0 10%;
+    > * {
+        margin-bottom: 0.5em;
+    }
+}
+
+.landing-btn {
+    letter-spacing: 0.1em;
+    padding: 0.7em;
+    margin: 0.5em 0.5em;
+    text-decoration: none;
+    font-size: calc(1vh + 4vw);
+    color: #fff;
+    border: #fff;
+    border-style: solid;
+    border-width: 0.1em;
+    background: rgba(0,0,0,0.5);
+    transition: 0.25s ease all;
+    text-align: center;
+    font-variant: small-caps;
+    box-shadow: 3px 3px 12px #666;
+}
+
+.landing-btn:hover {
+  background: rgba(0,0,0,0.9);
+  text-shadow: 0 0 2px rgba(255,255,255,0.5), 0 0 3px rgba(255,255,255,0.5);
+}
+
+@media (min-width: 30rem) {
+    .btns {
+        width: 90vw;
+        margin: 0 5%;
+        flex-direction: row;
+        padding: 0.5em;
+    }
+}
