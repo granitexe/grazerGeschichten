@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/video-gallery.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/footer.css">
+        <title>Gallery</title>
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+                <div class="orte">
+                    <a class="active" href="index.html">Andritz</a>
+                </div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="map.html">Karte</a></li>
+                    <li><a href="video-gallery.html">Videos</a></li>
+                    <li>
+                        <a href="#" class="desktop-item">Texte</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Texte</label>
+                        <ul class="drop-menu">
+                            <li><a href="text1.html">Text 1</a></li>
+                            <li><a href="text2.html">Text 2</a></li>
+                            <li><a href="text3.html">Text 3</a></li>
+                            <li><a href="text4.html">Text 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>video gallery</h1>
+            <div class="video-container">
+                <!-- poster="posterimage.jpg" -->
+                <!-- autoplay -->
+                <!-- muted -->
+                <div class="video"><video src="resources/videos-architektur/Architektur_01_v1.mp4"></video></div>
+                <div class="video"><video src="resources/videos-architektur/Architektur_02_v1.mp4"></video></div>
+                <div class="video"><video src="resources/videos-architektur/Architektur_03_v1.mp4"></video></div>
+                <div class="video"><video src="resources/videos-architektur/Architektur_04_v1.mp4"></video></div>
+                <div class="video"><video src="resources/videos-architektur/Architektur_05_v1.mp4"></video></div>
+                <div class="video"><video src="resources/videos-architektur/Architektur_06_v1.mp4"></video></div>
+                <div class="video"><video src="resources/videos-architektur/Architektur_07_v1.mp4"></video></div>
+                <div class="video"><video src="resources/videos-architektur/Architektur_08_v1.mp4"></video></div>
+            </div>
+            <div class="popup-video">
+                <span>&times;</span>
+                <video src="resources/videos-architektur/Architektur_01_v1.mp44" autoplay controls></video>
+            </div>
+        </div>
+        <footer id="footer">
+            <a class="footer-link" href="#">Datenschutz</a>
+            <a class="footer-link" href="#">Impressum</a>
+        </footer>
+    <script type="text/javascript">
+        document.querySelectorAll('.video-container video').forEach(vid => {
+            vid.onclick = () =>{
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video video').src = vid.getAttribute('src');
+                document.querySelector('.popup-video video').play();
+            }
+        });
+
+        document.querySelector('.popup-video span').onclick = () =>{
+            document.querySelector('.popup-video').style.display = 'none';
+            document.querySelector('.popup-video video').pause();
+            document.querySelector('.popup-video video').currentTime = 0;
+        }
+
+        document.addEventListener('keydown', function(event){
+            if(event.key == "Escape"){
+                document.querySelector('.popup-video').style.display = 'none';
+                document.querySelector('.popup-video video').pause();
+                document.querySelector('.popup-video video').currentTime = 0;
+            }
+        });
+    </script>
+    </body>
+</html>

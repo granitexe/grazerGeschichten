@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang"de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!-- Sidebar -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Map</title>
+
+    <style>
+      #map {
+        height: 90vh;
+        width: 100%;
+      }
+    </style>
+
+  </head>
+  <body>
+      <!-- Navbar -->
+      <nav>
+          <div class="wrapper">
+              <div class="orte">
+                  <a class="active" href="index.html">Andritz</a>
+              </div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links">
+                  <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                  <li><a href="map.html">Karte</a></li>
+                  <li><a href="video-gallery.html">Videos</a></li>
+                  <li>
+                      <a href="#" class="desktop-item">Texte</a>
+                      <input type="checkbox" id="showDrop">
+                      <label for="showDrop" class="mobile-item">Texte</label>
+                      <ul class="drop-menu">
+                          <li><a href="text1.html">Text 1</a></li>
+                          <li><a href="text2.html">Text 2</a></li>
+                          <li><a href="text3.html">Text 3</a></li>
+                          <li><a href="text4.html">Text 4</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="kontakt.html">Kontakt</a></li>
+              </ul>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          </div>
+      </nav>
+
+      <!-- Map -->
+      <div id="map"></div>
+
+      <!-- Sidebar -->
+      <div class="menu-button">
+          <i class="fas fa-ellipsis"></i>
+      </div>
+      <div class="side-bar active">
+          <div class="close-button">
+              <i class="fas fa-times"></i>
+          </div>
+          <div class="menu">
+              <div class="item">
+                  <a id="first" class="sub-btn" href="javascript:addLayer(fus)"><i class="fas fa-table-tennis"></i>Freizeit und Sport<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                      <a href="javascript:openBubble(fus1)" class="sub-item">Sub Item 01</a>
+                      <a href="javascript:openBubble(fus2)" class="sub-item">Sub Item 02</a>
+                      <a href="javascript:openBubble(fus3)" class="sub-item">Sub Item 03</a>
+                      <a href="javascript:openBubble(fus4)" class="sub-item">Sub Item 04</a>
+                      <a href="javascript:openBubble(fus5)" class="sub-item">Sub Item 05</a>
+                      <a href="javascript:openBubble(fus6)" class="sub-item">Sub Item 06</a>
+                      <a href="javascript:openBubble(fus7)" class="sub-item">Sub Item 07</a>
+                      <a href="javascript:openBubble(fus8)" class="sub-item">Sub Item 08</a>
+                      <a href="javascript:openBubble(fus9)" class="sub-item">Sub Item 09</a>
+                      <a href="javascript:openBubble(fus10)" class="sub-item">Sub Item 10</a>
+                      <a href="javascript:openBubble(fus11)" class="sub-item">Sub Item 11</a>
+                      <a href="javascript:openBubble(fus12)" class="sub-item">Sub Item 12</a>
+                      <a href="javascript:openBubble(fus13)" class="sub-item">Sub Item 13</a>
+                      <a href="javascript:openBubble(fus14)" class="sub-item">Sub Item 14</a>
+                      <a href="javascript:openBubble(fus15)" class="sub-item">Sub Item 15</a>
+                      <a href="javascript:openBubble(fus16)" class="sub-item">Sub Item 16</a>
+                      <a href="javascript:openBubble(fus17)" class="sub-item">Sub Item 17</a>
+                  </div>
+              </div>
+              <div class="item">
+                  <a id="second" class="sub-btn" href="javascript:addLayer(aus)"><i class="fas fa-building"></i>Architektur & Stadtplanung<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                      <a href="javascript:openBubble(aus1)" class="sub-item">Sub Item 01</a>
+                      <a href="javascript:openBubble(aus2)" class="sub-item">Sub Item 02</a>
+                      <a href="javascript:openBubble(aus3)" class="sub-item">Sub Item 03</a>
+                      <a href="javascript:openBubble(aus4)" class="sub-item">Sub Item 04</a>
+                      <a href="javascript:openBubble(aus5)" class="sub-item">Sub Item 05</a>
+                      <a href="javascript:openBubble(aus6)" class="sub-item">Sub Item 06</a>
+                      <a href="javascript:openBubble(aus7)" class="sub-item">Sub Item 07</a>
+                      <a href="javascript:openBubble(aus8)" class="sub-item">Sub Item 08</a>
+                  </div>
+              </div>
+              <div class="item">
+                  <a id="third" class="sub-btn" href="javascript:addLayer(gug)"><i class="fas fa-seedling"></i>Gärten und Grünraum<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                      <a href="javascript:openBubble(gug1)" class="sub-item">Sub Item 01</a>
+                  </div>
+              </div>
+              <div class="item">
+                  <a id="fourth" class="sub-btn" href="javascript:addLayer(kur)"><i class="fas fa-cross"></i>Kirche und Religion<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                      <a href="javascript:openBubble(kur1)" class="sub-item">Sub Item 01</a>
+                      <a href="javascript:openBubble(kur2)" class="sub-item">Sub Item 02</a>
+                      <a href="javascript:openBubble(kur3)" class="sub-item">Sub Item 03</a>
+                      <a href="javascript:openBubble(kur4)" class="sub-item">Sub Item 04</a>
+                  </div>
+              </div>
+              <div class="item">
+                  <a id="fith" class="sub-btn" href="javascript:addLayer(nuz)"><i class="fas fa-fist-raised"></i>Nationalsozialismus<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                      <a href="javascript:openBubble(nuz1)" class="sub-item">Sub Item 01</a>
+                      <a href="javascript:openBubble(nuz2)" class="sub-item">Sub Item 02</a>
+                      <a href="javascript:openBubble(nuz3)" class="sub-item">Sub Item 03</a>
+                      <a href="javascript:openBubble(nuz4)" class="sub-item">Sub Item 04</a>
+                      <a href="javascript:openBubble(nuz5)" class="sub-item">Sub Item 05</a>
+                      <a href="javascript:openBubble(nuz6)" class="sub-item">Sub Item 06</a>
+                  </div>
+              </div>
+              <div class="item">
+                  <a id="sixth" class="sub-btn" href="javascript:addLayer(oee)"><i class="fas fa-university"></i>Öffentliche Einrichtungen<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                      <a href="javascript:openBubble(oee1)" class="sub-item">Sub Item 01</a>
+                      <a href="javascript:openBubble(oee2)" class="sub-item">Sub Item 02</a>
+                      <a href="javascript:openBubble(oee3)" class="sub-item">Sub Item 03</a>
+                      <a href="javascript:openBubble(oee4)" class="sub-item">Sub Item 04</a>
+                  </div>
+              </div>
+              <div class="item">
+                  <a id="seventh" class="sub-btn" href="javascript:addLayer(sch)"><i class="fas fa-graduation-cap"></i>Schulzeit<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                      <a href="javascript:openBubble(sch1)" class="sub-item">Sub Item 01</a>
+                      <a href="javascript:openBubble(sch2)" class="sub-item">Sub Item 02</a>
+                      <a href="javascript:openBubble(sch3)" class="sub-item">Sub Item 03</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <footer id="footer">
+          <a class="footer-link" href="#">Datenschutz</a>
+          <a class="footer-link" href="#">Impressum</a>
+      </footer>
+
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="resources/js/map.js"></script>
+
+    <!-- Sidebar -->
+    <script type="text/javascript">
+
+        var current = null;
+        $(document).ready(function(){
+            //jquery for toggle sub menus
+
+// todo: menüpunkte id geben und speichern
+// bei wieder click soll zu sliden
+            var first = document.getElementById('first');
+            first.classList.add('highlighted');
+            var start = true;
+
+            $('.sub-btn').click(function(){
+                if (start) {
+                    document.getElementById('first').classList.remove('highlighted');
+                    start = false;
+                }
+
+                /*
+                if (current != null) {
+                    if (current.hasClass('open')) {
+                        current.next('.sub-menu').slideToggle();
+                        current.find('.dropdown').toggleClass('rotate');
+                        current.toggleClass('highlighted');
+                        current.classList.remove('open')
+                    }
+                }
+
+                if ($(this).hasClass('open')) {
+                    $(this).classList.remove('open');
+                }
+                else {
+                    $(this).classList.add('open');
+                }
+                */
+
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+                $(this).toggleClass('highlighted');
+                //if ($(this) != current && current != null) {}
+
+                //current = $(this)
+            });
+
+            //jquery for expand and collapse the sidebar
+            $('.menu-button').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menu-button').css("visibility", "hidden");
+            });
+
+            $('.close-button').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menu-button').css("visibility", "visible");
+            });
+        });
+    </script>
+  </body>
+</html>
