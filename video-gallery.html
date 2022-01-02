@@ -9,7 +9,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/footer.css">
-        <title>Gallery</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+
+        <title>Videos</title>
     </head>
     <body>
         <nav>
@@ -24,14 +29,14 @@
                     <li><a href="map.html">Karte</a></li>
                     <li><a href="video-gallery.html">Videos</a></li>
                     <li>
-                        <a href="#" class="desktop-item">Texte</a>
+                        <a href="#" class="desktop-item">Geschichte</a>
                         <input type="checkbox" id="showDrop">
-                        <label for="showDrop" class="mobile-item">Texte</label>
+                        <label for="showDrop" class="mobile-item">Geschichte</label>
                         <ul class="drop-menu">
-                            <li><a href="text1.html">Text 1</a></li>
-                            <li><a href="text2.html">Text 2</a></li>
-                            <li><a href="text3.html">Text 3</a></li>
-                            <li><a href="text4.html">Text 4</a></li>
+                            <li><a href="text1.html">Geschichte erlebt und erzählt</a></li>
+                            <li><a href="text2.html">Geschichtswerkstätte</a></li>
+                            <li><a href="text3.html">Bewahrenswertes Bauerbe</a></li>
+                            <li><a href="text4.html">Terror und Menschlichkeit</a></li>
                         </ul>
                     </li>
                     <li><a href="kontakt.html">Kontakt</a></li>
@@ -59,10 +64,13 @@
                 <video src="resources/videos-architektur/Architektur_01_v1.mp44" autoplay controls></video>
             </div>
         </div>
+
         <footer id="footer">
-            <a class="footer-link" href="#">Datenschutz</a>
-            <a class="footer-link" href="#">Impressum</a>
+            <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+            <a class="footer-link" href="impressum.html">Impressum</a>
         </footer>
+
+
     <script type="text/javascript">
         document.querySelectorAll('.video-container video').forEach(vid => {
             vid.onclick = () =>{
