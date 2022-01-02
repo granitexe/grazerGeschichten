@@ -10,6 +10,7 @@
     transition: 0.6s ease;
     transition-property: left;
     z-index: 1000;
+    padding-bottom: 80px;
 }
 
 .side-bar.active {
@@ -32,7 +33,7 @@
     font-size: 16px;
     text-decoration: none;
     display: block;
-    padding: 5px 30px;
+    padding: 5px 20px;
     line-height: 60px;
 }
 
@@ -58,7 +59,8 @@
 }
 
 .side-bar .menu .item .sub-menu a {
-    padding-left: 80px;
+    font-size: 15px;
+    padding-left: 60px;
 }
 
 .rotate {
