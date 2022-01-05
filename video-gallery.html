@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/video-gallery.css">
         <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/video-gallery.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
@@ -13,6 +13,11 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
         <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+
+        <!-- Sidebar -->
+        <link rel="stylesheet" href="css/sidebar-video.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
 
         <title>Videos</title>
     </head>
@@ -27,7 +32,7 @@
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
                     <li><a href="map.html">Karte</a></li>
-                    <li><a href="video-gallery.html">Videos</a></li>
+                    <li><a href="video-index.html">Videos</a></li>
                     <li>
                         <a href="#" class="desktop-item">Geschichte</a>
                         <input type="checkbox" id="showDrop">
@@ -44,24 +49,177 @@
                 <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
             </div>
         </nav>
-        <div class="container">
-            <h1>video gallery</h1>
+
+        <div class="filler"></div>
+        <div class="menu-button">
+            <i class="fas fa-ellipsis"></i>
+        </div>
+        <div class="side-bar">
+            <div class="close-button">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="menu">
+                <div class="item">
+                    <a id="first" class="sub-btn" href="video-gallery.html#fus"><i class="fas fa-table-tennis"></i>Freizeit und Sport</a>
+                </div>
+                <div class="item">
+                    <a id="second" class="sub-btn" href="video-gallery.html#aus"><i class="fas fa-building"></i>Architektur & Stadtplanung</a>
+                </div>
+                <div class="item">
+                    <a id="third" class="sub-btn" href="video-gallery.html#gug"><i class="fas fa-seedling"></i>Gärten und Grünraum</a>
+                </div>
+                <div class="item">
+                    <a id="fourth" class="sub-btn" href="video-gallery.html#kur"><i class="fas fa-cross"></i>Kirche und Religion</i></a>
+                </div>
+                <div class="item">
+                    <a id="fith" class="sub-btn" href="video-gallery.html#nuz"><i class="fas fa-fist-raised"></i>Nationalsozialismus</i></a>
+                </div>
+                <div class="item">
+                    <a id="sixth" class="sub-btn" href="video-gallery.html#oee"><i class="fas fa-university"></i>Öffentliche Einrichtungen</i></a>
+                </div>
+                <div class="item">
+                    <a id="seventh" class="sub-btn" href="video-gallery.html#sch"><i class="fas fa-graduation-cap"></i>Schulzeit</i></a>
+                </div>
+                <div class="item">
+                    <a class="sub-btn" href="video-gallery.html#vum"><i class="fas fa-car-side"></i>Verkehr und Mobilität</i></a>
+                </div>
+                <div class="item">
+                    <a class="sub-btn" href="video-gallery.html#wir"><i class="fas fa-chart-line"></i>Wirtschaft</i></a>
+                </div>
+                <div class="item">
+                    <a class="sub-btn" href="video-gallery.html#woh"><i class="fas fa-home"></i>Wohnverhältnisse</i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="fus">
+            <h1>Freizeit & Sport</h1>
             <div class="video-container">
-                <!-- poster="posterimage.jpg" -->
-                <!-- autoplay -->
-                <!-- muted -->
-                <div class="video"><video src="resources/videos-architektur/Architektur_01_v1.mp4"></video></div>
-                <div class="video"><video src="resources/videos-architektur/Architektur_02_v1.mp4"></video></div>
-                <div class="video"><video src="resources/videos-architektur/Architektur_03_v1.mp4"></video></div>
-                <div class="video"><video src="resources/videos-architektur/Architektur_04_v1.mp4"></video></div>
-                <div class="video"><video src="resources/videos-architektur/Architektur_05_v1.mp4"></video></div>
-                <div class="video"><video src="resources/videos-architektur/Architektur_06_v1.mp4"></video></div>
-                <div class="video"><video src="resources/videos-architektur/Architektur_07_v1.mp4"></video></div>
-                <div class="video"><video src="resources/videos-architektur/Architektur_08_v1.mp4"></video></div>
+                <div class="video"><video src="resources/videos/freizeitundsport/Freizeitverhalten01.mp4"></video></div>
+                <div class="video"><video src="resources/videos/freizeitundsport/Freizeitverhalten02.mp4"></video></div>
+                <div class="video"><video src="resources/videos/freizeitundsport/Freizeitverhalten03.mp4"></video></div>
+                <div class="video"><video src="resources/videos/freizeitundsport/Freizeitverhalten04.mp4"></video></div>
+                <div class="video"><video src="resources/videos/freizeitundsport/Freizeitverhalten05.mp4"></video></div>
+                <div class="video"><video src="resources/videos/freizeitundsport/Freizeitverhalten06.mp4"></video></div>
+                <div class="video"><video src="resources/videos/freizeitundsport/Freizeitverhalten07.mp4"></video></div>
             </div>
             <div class="popup-video">
                 <span>&times;</span>
                 <video src="resources/videos-architektur/Architektur_01_v1.mp44" autoplay controls></video>
+            </div>
+        </div>
+        <div class="container" id="aus">
+            <h1>Archiktur & Stadtplanung</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/architektur/Wohnbau_1.mp4"></video></div>
+                <div class="video"><video src="resources/videos/architektur/Wohnbau_2.mp4"></video></div>
+                <div class="video"><video src="resources/videos/architektur/Wohnbau_3.mp4"></video></div>
+                <div class="video"><video src="resources/videos/architektur/Wohnbau_4.mp4"></video></div>
+                <div class="video"><video src="resources/videos/architektur/Wohnbau_5.mp4"></video></div>
+                <div class="video"><video src="resources/videos/architektur/Wohnbau_6.mp4"></video></div>
+                <div class="video"><video src="resources/videos/architektur/Wohnbau_7.mp4"></video></div>
+                <div class="video"><video src="resources/videos/architektur/Wohnbau_8.mp4"></video></div>
+            </div>
+        </div>
+        <div class="container" id="gug">
+            <h1>Grünraum & Gärten</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/garten/Garten und Grünraum 01.mp4"></video></div>
+            </div>
+        </div>
+        <div class="container" id="kur">
+            <h1>Kirche & Religion</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/kirche/Kirche und Religion 01.mp4"></video></div>
+                <div class="video"><video src="resources/videos/kirche/Kirche und Religion 02.mp4"></video></div>
+                <div class="video"><video src="resources/videos/kirche/Kirche und Religion 03.mp4"></video></div>
+                <div class="video"><video src="resources/videos/kirche/Kirche und Religion 04.mp4"></video></div>
+            </div>
+        </div>
+        <div class="container" id="nuz">
+            <h1>Nationalsozialismus & II. Weltkrieg</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/ns/NS-Zeit und 2. Weltkrieg 01.mp4"></video></div>
+                <div class="video"><video src="resources/videos/ns/NS-Zeit und 2. Weltkrieg 02.mp4"></video></div>
+                <div class="video"><video src="resources/videos/ns/NS-Zeit und 2. Weltkrieg 03.mp4"></video></div>
+                <div class="video"><video src="resources/videos/ns/NS-Zeit und 2. Weltkrieg 04.mp4"></video></div>
+                <div class="video"><video src="resources/videos/ns/NS-Zeit und 2. Weltkrieg 05.mp4"></video></div>
+                <div class="video"><video src="resources/videos/ns/NS-Zeit und 2. Weltkrieg 06.mp4"></video></div>
+            </div>
+        </div>
+        <div class="container" id="oee">
+            <h1>Öffentliche Einrichtungen</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/offentliche/Öffentl. Einrichtungen 01.mp4"></video></div>
+                <div class="video"><video src="resources/videos/offentliche/Öffentl. Einrichtungen 02.mp4"></video></div>
+                <div class="video"><video src="resources/videos/offentliche/Öffentl. Einrichtungen 03.mp4"></video></div>
+                <div class="video"><video src="resources/videos/offentliche/Öffentl. Einrichtungen 04.mp4"></video></div>
+            </div>
+        </div>
+        <div class="container" id="sch">
+            <h1>Schulzeit</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/schulzeit/Schulzeit 01.mp4"></video></div>
+                <div class="video"><video src="resources/videos/schulzeit/Schulzeit 02.mp4"></video></div>
+                <div class="video"><video src="resources/videos/schulzeit/Schulzeit 03.mp4"></video></div>
+            </div>
+        </div>
+        <div class="container" id="vum">
+            <h1>Verkehr & Mobilität</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 01.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 02.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 03.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 04.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 05.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 06.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 07.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 08.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 09.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 10.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 11.mp4"></video></div>
+                <div class="video"><video src="resources/videos/verkehr/Verkehr und Mobilität 12.mp4"></video></div>
+            </div>
+        </div>
+
+        <div class="container" id="wir">
+            <h1>Wirtschaft</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 01.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 02.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 03.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 04.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 05.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 06.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 07.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 08.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 09.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 10.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 11.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 12.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 13.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 14.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 15.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 16.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wirtschaft/Wirtschaft 17.mp4"></video></div>
+            </div>
+        </div>
+
+        <div class="container" id="woh">
+            <h1>Wohnverhältnisse</h1>
+            <div class="video-container">
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 01.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 02.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 03.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 04.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 05.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 06.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 07.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 08.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 09.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 10.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 11.mp4"></video></div>
+                <div class="video"><video src="resources/videos/wohnverhaltniss/Wohnverhältnisse 12.mp4"></video></div>
             </div>
         </div>
 
@@ -93,6 +251,54 @@
                 document.querySelector('.popup-video video').currentTime = 0;
             }
         });
+    </script>
+
+    <!-- Sidebar -->
+    <script type="text/javascript">
+
+
+    $(document).ready(function(){
+        //jquery for toggle sub menus
+
+
+
+        $('.sub-btn').click(function(){
+
+
+
+            //if (current != $(this) {
+                //current.classList.remove('highlighted');
+                //$(this).classList.add('highlighted');
+                //current = $(this);
+            //}
+            /*
+
+            if ($(this).hasClass('open')) {
+                $(this).classList.remove('open');
+            }
+            else {
+                $(this).classList.add('open');
+            }
+            */
+
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+            //if ($(this) != current && current != null) {}
+
+            //current = $(this)
+        });
+
+        //jquery for expand and collapse the sidebar
+        $('.menu-button').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-button').css("visibility", "hidden");
+        });
+
+        $('.close-button').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-button').css("visibility", "visible");
+        });
+    });
     </script>
     </body>
 </html>

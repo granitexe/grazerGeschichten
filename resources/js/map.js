@@ -16,7 +16,8 @@ let fus1_b =`
 <h3>Andritzer Reichsstraße 25A</h3>
 <div class="video-container">
     <div class="video">
-        <video width="300" src="resources/videos/freizeitundsport/Freizeitverhalten01.mp4" autoplay controls></video>
+        <!--<video width="300" src="resources/videos/freizeitundsport/Freizeitverhalten01.mp4" autoplay controls></video>-->
+        <iframe width="300" src="https://www.youtube.com/embed/tgbNymZ7vqY?modestbranding=1&showinfo=0" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
 </div>
 `
@@ -741,6 +742,120 @@ var wir17 = L.marker([47.100785483371055, 15.432403222680898]).bindPopup(wir17_b
 
 wir = [wir1, wir2, wir3, wir4, wir5, wir6, wir7, wir8, wir9, wir10, wir11, wir12, wir13, wir14, wir15, wir16, wir17];
 
+
+let woh1_b =`
+<h3>Statteggerstraße 5-7: Holzholen im Nachthemd</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 01.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh2_b =`
+<h3>Andritzer Reichsstraße 57: als es noch keine Zentralheizung gab</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 02.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh3_b =`
+<h3>Viktor-Kaplan-Gasse 25: der so genannte Sparherd</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 03.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh4_b =`
+<h3>Andritzer Reichsstraße 128: Ein Bombentrichter als Müllhalde</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 04.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh5_b =`
+<h3>Stattegger Straße/Andritzer Reichsstraße: als kaum jemand schon ein Telefon hatte</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 05.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh6_b =`
+<h3>St.-Veiter-Straße 65: Zum Telefonieren beim Feldwirt</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 06.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh7_b =`
+<h3>Beim Feldwirt: Wäschewasche im Gabriachbach</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 07.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh8_b =`
+<h3>Stattegger Straße: Wäschewaschen im Andritzbach</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 08.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh9_b =`
+<h3>Andritzer Reichsstraße 57: vom Plumpsklo und "Häuslräumern"</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 09.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh10_b =`
+<h3>Statteggerstraße 5-7: Klo am Gang</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 10.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh11_b =`
+<h3>Andritzer Reichsstraße 138: als Fäkalien noch am Feld als Dünger landeten</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 11.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+let woh12_b =`
+<h3>Falkenweg: die Dennig-Quelle</h3>
+<div class="video-container">
+    <div class="video">
+        <video width="300" src="resources/videos/wohnverhaltniss/Wohnverhältnisse 12.mp4" autoplay controls></video>
+    </div>
+</div>
+`
+
+
+// Wirtschaft
+var woh1 = L.marker([47.10760003691229, 15.42196627697922]).bindPopup(woh1_b);
+var woh2 = L.marker([47.10601088861423, 15.42043538230511]).bindPopup(woh2_b);
+var woh3 = L.marker([47.1027359281071, 15.416941859747736]).bindPopup(woh3_b);
+var woh4 = L.marker([47.11211264525019, 15.408957060824621]).bindPopup(woh4_b);
+var woh5 = L.marker([47.10633342862376, 15.420767718741887]).bindPopup(woh5_b);
+var woh6 = L.marker([47.11395510027458, 15.413429881989153]).bindPopup(woh6_b);
+var woh7 = L.marker([47.11412883702475, 15.41397908062604]).bindPopup(woh7_b);
+var woh8 = L.marker([47.107523774077066, 15.421761288272407]).bindPopup(woh8_b);
+var woh9 = L.marker([47.105902593364156, 15.420410233720908]).bindPopup(woh9_b);
+var woh10 = L.marker([47.10708426947951, 15.421444165975817]).bindPopup(woh10_b);
+var woh11 = L.marker([47.11248092778081, 15.407304496396504]).bindPopup(woh11_b);
+var woh12 = L.marker([47.115888665071815, 15.402141099945242]).bindPopup(woh12_b);
+
+woh = [woh1, woh2, woh3, woh4, woh5, woh6, woh7, woh8, woh9, woh10, woh11, woh12];
 
 // create group and add markers
 var currentGroup = L.layerGroup(fus).addTo(mymap);

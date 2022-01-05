@@ -10,13 +10,24 @@ html {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
   background-color: #111;
-  overflow: hidden;
+}
+
+nav {
+    position: fixed;
+}
+
+.filler {
+    width: 100%;
+    height: 60px;
 }
 
 .container {
+    padding-top: 60px;
     position: relative;
-    min-height: 100vh;
+    min-height: 40vh;
     background: #444;
+    overflow: hidden;
+    padding-bottom: 90px;
 }
 
 .container h1 {
@@ -25,6 +36,8 @@ html {
     padding: 15px;
     font-size: 40px;
     font-weight: normal;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
 }
 
 .container .video-container {
@@ -92,4 +105,44 @@ html {
     .container .popup-video video {
         width: 95%;
     }
+}
+
+#fus {
+    background-color: #fcba03;
+}
+
+#aus {
+    background-color: #ad03fc;
+}
+
+#gug {
+    background-color: #03fca9;
+}
+
+#kur {
+    background-color: #ffea3b;
+}
+
+#nuz {
+    background-color: #9c976e;
+}
+
+#oee{
+    background-color: #d9971c;
+}
+
+#sch {
+    background-color: #1cb3d9;
+}
+
+#vum {
+    background-color: #7b959c;
+}
+
+#wir{
+    background-color: #ff3217;
+}
+
+#woh{
+    background-color: #8abd97;
 }

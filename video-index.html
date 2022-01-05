@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/video-index.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/footer.css">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+
+        <title>Videos</title>
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+                <div class="orte">
+                    <a class="active" href="index.html">Andritz</a>
+                </div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="map.html">Karte</a></li>
+                    <li><a href="video-gallery.html">Videos</a></li>
+                    <li>
+                        <a href="#" class="desktop-item">Geschichte</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Geschichte</label>
+                        <ul class="drop-menu">
+                            <li><a href="text1.html">Geschichte erlebt und erzählt</a></li>
+                            <li><a href="text2.html">Geschichtswerkstätte</a></li>
+                            <li><a href="text3.html">Bewahrenswertes Bauerbe</a></li>
+                            <li><a href="text4.html">Terror und Menschlichkeit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+        <div class="container">
+            <h1><b>Rubriken</b></h1>
+            <div class="class-container">
+                <div class="rubrik-container">
+                    <div class="rubrik fus">
+                        <a href="video-gallery.html#fus"><i class="fas fa-table-tennis"></i></a>
+                    </div>
+                    <div class=rubrik-text>Freizeit und Sport</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik aus">
+                        <a href="video-gallery.html#aus"><i class="fas fa-building"></i></a>
+                    </div>
+                    <div class=rubrik-text>Stadtplanung</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik gug">
+                        <a href="video-gallery.html#gug"><i class="fas fa-seedling"></i></a>
+                    </div>
+                    <div class=rubrik-text>Grünraum & Gärten</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik kur">
+                        <a href="video-gallery.html#kur"><i class="fas fa-cross"></i></a>
+                    </div>
+                    <div class=rubrik-text>Kirche & Religion</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik nuz">
+                        <a href="video-gallery.html#nuz"><i class="fas fa-fist-raised"></i></a>
+                    </div>
+                    <div class=rubrik-text>Nationalsozialismus</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik oee">
+                        <a href="video-gallery.html#oee"><i class="fas fa-university"></i></a>
+                    </div>
+                    <div class=rubrik-text>Öffentl. Einrichtungen</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik sch">
+                        <a href="video-gallery.html#sch"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                    <div class=rubrik-text>Schulzeit</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik vum">
+                        <a href="video-gallery.html#vum"><i class="fas fa-car-side"></i></a>
+                    </div>
+                    <div class=rubrik-text>Verkehr & Mobilität</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik wir">
+                        <a href="video-gallery.html#wir"><i class="fas fa-chart-line"></i></a>
+                    </div>
+                    <div class=rubrik-text>Wirtschaft</div>
+                </div>
+                <div class="rubrik-container">
+                    <div class="rubrik woh">
+                        <a href="video-gallery.html#woh"><i class="fas fa-home"></i></a>
+                    </div>
+                    <div class=rubrik-text>Wohnverhältnisse</div>
+                </div>
+        </div>
+
+        <footer id="footer">
+            <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+            <a class="footer-link" href="impressum.html">Impressum</a>
+        </footer>
+
+
+    <script type="text/javascript">
+        document.querySelectorAll('.video-container video').forEach(vid => {
+            vid.onclick = () =>{
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video video').src = vid.getAttribute('src');
+                document.querySelector('.popup-video video').play();
+            }
+        });
+
+        document.querySelector('.popup-video span').onclick = () =>{
+            document.querySelector('.popup-video').style.display = 'none';
+            document.querySelector('.popup-video video').pause();
+            document.querySelector('.popup-video video').currentTime = 0;
+        }
+
+        document.addEventListener('keydown', function(event){
+            if(event.key == "Escape"){
+                document.querySelector('.popup-video').style.display = 'none';
+                document.querySelector('.popup-video video').pause();
+                document.querySelector('.popup-video video').currentTime = 0;
+            }
+        });
+    </script>
+    </body>
+</html>
