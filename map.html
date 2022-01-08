@@ -69,7 +69,7 @@
       <div class="menu-button">
           <i class="fas fa-ellipsis"></i>
       </div>
-      <div class="side-bar active">
+      <div id="side" class="side-bar">
           <div class="close-button">
               <i class="fas fa-times"></i>
           </div>
@@ -222,6 +222,10 @@
 
     <!-- Sidebar -->
     <script type="text/javascript">
+
+        if($('body').width() > 800){
+            $('#side').addClass('active');
+        }
 
         var current = null;
         $(document).ready(function(){

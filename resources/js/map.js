@@ -16,8 +16,8 @@ let fus1_b =`
 <h3>Andritzer Reichsstraße 25A</h3>
 <div class="video-container">
     <div class="video">
-        <!--<video width="300" src="resources/videos/freizeitundsport/Freizeitverhalten01.mp4" autoplay controls></video>-->
-        <iframe width="300" src="https://www.youtube.com/embed/tgbNymZ7vqY?modestbranding=1&showinfo=0" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <video width="300" src="resources/videos/freizeitundsport/Freizeitverhalten01.mp4" autoplay controls></video>
+        <!--<iframe width="300" src="https://www.youtube.com/embed/tgbNymZ7vqY?modestbranding=1&showinfo=0" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>-->
     </div>
 </div>
 `

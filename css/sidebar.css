@@ -108,3 +108,9 @@
     padding: 9px;
     vertical-align: middle;
 }
+
+@media (max-width: 50rem) {
+    .menu-button {
+        visibility: visible;
+    }
+}
