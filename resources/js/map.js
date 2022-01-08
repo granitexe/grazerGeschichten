@@ -734,13 +734,13 @@ var wir9 = L.marker([47.11177822864794, 15.407116771841396]).bindPopup(wir9_b);
 var wir10 = L.marker([47.103077143279684, 15.414613920832412]).bindPopup(wir10_b);
 var wir11 = L.marker([47.11374965742488, 15.426116313811137]).bindPopup(wir11_b);
 var wir12 = L.marker([47.10670753100572, 15.401768227906551]).bindPopup(wir12_b);
-var wir13 = L.marker([47.10730458884316, 15.42193131980104]).bindPopup(wir13_b);
-var wir14 = L.marker([47.11049434044689, 15.418330854663516]).bindPopup(wir14_b);
-var wir15 = L.marker([47.11082766606424, 15.42171334967622]).bindPopup(wir15_b);
+//var wir13 = L.marker([47.10730458884316, 15.42193131980104]).bindPopup(wir13_b);
+//var wir14 = L.marker([47.11049434044689, 15.418330854663516]).bindPopup(wir14_b);
+//var wir15 = L.marker([47.11082766606424, 15.42171334967622]).bindPopup(wir15_b);
 var wir16 = L.marker([47.109483889770644, 15.420501262880421]).bindPopup(wir16_b);
-var wir17 = L.marker([47.100785483371055, 15.432403222680898]).bindPopup(wir17_b);
+//var wir17 = L.marker([47.100785483371055, 15.432403222680898]).bindPopup(wir17_b);
 
-wir = [wir1, wir2, wir3, wir4, wir5, wir6, wir7, wir8, wir9, wir10, wir11, wir12, wir13, wir14, wir15, wir16, wir17];
+wir = [wir1, wir2, wir3, wir4, wir5, wir6, wir7, wir8, wir9, wir10, wir11, wir12, wir16] //wir13, wir14, wir15, wir16, wir17];
 
 
 let woh1_b =`
