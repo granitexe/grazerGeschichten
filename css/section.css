@@ -76,7 +76,7 @@ body, html {
 
 .explain .explain-info .explain-info-heading,
 .explain-left .explain-info-left .explain-info-heading-left {
-  font-size: 5rem;
+    font-size: 4rem;
   font-weight: 300;
 	color: lightgrey;
 	transition: 1s ease all;
@@ -128,10 +128,18 @@ body, html {
 
 .explain-info-left {
     margin-left: 10px;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 /* END Explain Section */
 
+@media (max-width: 40rem) {
+    .explain-info-left {
+        width: 80%;
+    }
+    .explain-info-heading-left {
+        font-size: 4rem;
+    }
+}
 /* Media query for desktop and tab */
 @media only screen and (min-width:768px) {
 
