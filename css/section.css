@@ -87,6 +87,7 @@ body, html {
 .explain:hover-left .explain-info-left .explain-info-heading-left {
 	text-shadow: 0 0 4px white;
 	transition: 0.7s ease all;
+	width: 80%;
 }
 
 .explain .explain-info .explain-info-text,
@@ -124,6 +125,11 @@ body, html {
         margin-bottom: 40px;
         font-weight: lighter;
     }
+
+.explain-info-left {
+    margin-left: 10px;
+    margin-right: 10px; 
+}
 /* END Explain Section */
 
 /* Media query for desktop and tab */
