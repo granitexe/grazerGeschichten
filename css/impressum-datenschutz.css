@@ -47,3 +47,11 @@ body {
     padding: 40px 70px 0 70px;
     letter-spacing: .1rem;
 }
+
+img {
+    height: 150px;
+}
+
+.images {
+    align-content: space-between;
+}

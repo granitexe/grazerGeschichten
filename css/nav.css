@@ -26,6 +26,12 @@ nav .wrapper{
   display: inline-block;
 }
 
+.wrapper .logos img {
+    padding-top: 20px;
+    height: 60px;
+    margin-left: 15px;
+}
+
 .wrapper .orte .inactive {
   color: #777;
   text-decoration: none;
@@ -146,7 +152,7 @@ nav .wrapper{
   top: 10px;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 50rem) {
   .wrapper .btn{
     display: block;
   }
